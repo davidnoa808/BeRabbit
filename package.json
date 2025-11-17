@@ -1,0 +1,11 @@
+{
+  "name": "dj-playlist-vercel",
+  "version": "1.0.0",
+  "description": "DJ Playlist app with statistics and payment system",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "node-fetch": "^2.6.7",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3"
+  }
+}

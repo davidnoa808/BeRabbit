@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "public/**/*", "use": "@vercel/static" },
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ],
+  "env": {
+    "SENDGRID_API_KEY": "@sendgrid_api_key",
+    "EMAIL_TO": "davidnoamorales@gmail.com",
+    "ADMIN_USER": "@admin_user",
+    "ADMIN_PASSWORD": "@admin_password",
+    "JWT_SECRET": "@jwt_secret"
+  }
+}
